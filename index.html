@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ja">
-<head prefix="og:http://ogp.me/ns#">
+<!-- <head prefix="og:http://ogp.me/ns#"> -->
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,14 +18,14 @@
 <link rel="stylesheet" href="https://umigiwa.github.io/sdc_whitening/css/slick.css">
 <link rel="stylesheet" href="https://umigiwa.github.io/sdc_whitening/css/slick-theme.css">
 
-<link rel="icon" href="images/favicon.ico">
+<!--などなどのCSS。読み込ませ順序に注意-->
 
-  <meta property="og:title" content="snsページのタイトル">
+  <!-- <meta property="og:title" content="snsページのタイトル">
   <meta property="og:description" content="snsページの説明文">
   <meta property="og:url" content="snsページのURL:絶対パス">
   <meta property="og:image" content="サムネイル画像のURL">
   <meta property="og:type" content="ページの種類 website blog article">
-  <meta property="og:site_name" content="サイトの名前">
+  <meta property="og:site_name" content="サイトの名前"> -->
 
 </head>
 
@@ -73,7 +73,6 @@
       </div><!-- .kv_image -->
       <div class="scrolldown"><span>Scroll</span></div>
     </div><!-- .kv -->
-
 
     <div class="contents_wrap">
       <section class="about contents" id="about">
@@ -136,7 +135,6 @@
             </div><!-- .cost grid_text -->
           </div><!-- .home_whitening grid -->
         </div><!-- .type_contents inview fadeIn -->
-
 
         <div class="type_contents inview fadeIn">
           <p class="number">03</p>
@@ -210,7 +208,7 @@
           </dd>
         </dl>
       </section><!-- .faq contents #faq -->
-      
+
       <div class="bg_kurukuru kuru1"></div>
       <div class="bg_kurukuru kuru2"></div>
       <div class="bg_kurukuru kuru3"></div>
@@ -257,7 +255,6 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.665942631263!2d135.19096761504764!3d34.68837968043762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008efbd8fd1aff%3A0xca73370016668066!2z44CSNjUwLTAwMzQg5YW15bqr55yM56We5oi45biC5Lit5aSu5Yy65Lqs55S677yW77yXIO-8q--8oe-8ru-8qu-8tSA16ZqO!5e0!3m2!1sja!2sjp!4v1666237371537!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div><!-- .google_map -->
     </div><!-- .access_info -->
-
     <p class="copyright"><small>&copy;2022 umigiwa</small></p>
   </footer>
 </div><!-- .wrapper -->
@@ -311,17 +308,6 @@
     }else {
         $(this).addClass('open');
     }
-  });
-  // アンダーライン
-  $(window).scroll(function (){
-  $(".marker-animation").each(function(){
-    var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
-    var scroll = $(window).scrollTop(); //スクロールの位置を取得
-    var windowHeight = $(window).height(); //ウインドウの高さを取得
-    if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
-      $(this).addClass('active'); //クラス「active」を与える
-    }
-  });
   });
   // sub_nav .accessで非表示
   $(function() {
